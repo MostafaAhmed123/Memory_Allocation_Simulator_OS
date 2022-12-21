@@ -13,7 +13,7 @@ public class demo {
 	    Scanner myObj2 = new Scanner(System.in);
 	    String PartitonName,processname ;
 	    int No_Partitions,PartitionSize,No_processes,processSize;
-	    Policy p ;
+	    Policy p  ;
 	System.out.println("Enter nmuber of paritions ");
 	   No_Partitions= myObj1.nextInt() ;
 	   System.out.println("Enter nmuber of processes ");
@@ -47,9 +47,9 @@ public class demo {
 			  processes.add(Processes[i]);
 			  
  		  }
-		  for(int i = 0;i< processes.size();i++){
+		  /*for(int i = 0;i< processes.size();i++){
 			    p.allocateMemory(processes.get(i),partitions);
-			}
+			}*/
 		   int select ;
 		  
 		  while(true)
