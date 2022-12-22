@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class FirstFit implements Policy{
+public class FirstFit extends Policy{
     @Override
     public boolean allocateMemory(Process process, ArrayList<Partition> partitions) {
         return false;
