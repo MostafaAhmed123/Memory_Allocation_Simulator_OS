@@ -70,11 +70,9 @@ public class demo {
 				System.out.println("Do you want to compact? 1.yes 2.no");
 				choice = myObj1.nextInt();
 				if (choice == 1) {
-					policy.compaction(temp);
+					policy.compaction(temp); ;
 					for (int i = 0; i < notAllocated.size(); i++)
-						if(!policy.allocateMemory(notAllocated.get(i), temp))
-							notAllocated.add(notAllocated.get(i));
-						else
+						if(policy.allocateMemory(notAllocated.get(i), temp))
 							notAllocated.remove(notAllocated.get(i));
 					d.print(temp);
 					for (int i = 0; i < notAllocated.size(); i++)
@@ -94,9 +92,7 @@ public class demo {
 				if (choice == 1) {
 					policy.compaction(temp);
 					for (int i = 0; i < notAllocated.size(); i++)
-						if(!policy.allocateMemory(notAllocated.get(i), temp))
-							notAllocated.add(notAllocated.get(i));
-						else
+						if(policy.allocateMemory(notAllocated.get(i), temp))
 							notAllocated.remove(notAllocated.get(i));
 					d.print(temp);
 					for (int i = 0; i < notAllocated.size(); i++)
@@ -116,9 +112,7 @@ public class demo {
 				if (choice == 1) {
 					policy.compaction(temp);
 					for (int i = 0; i < notAllocated.size(); i++)
-						if(!policy.allocateMemory(notAllocated.get(i), temp))
-							notAllocated.add(notAllocated.get(i));
-						else
+						if(policy.allocateMemory(notAllocated.get(i), temp))
 							notAllocated.remove(notAllocated.get(i));
 					d.print(temp);
 					for (int i = 0; i < notAllocated.size(); i++)
