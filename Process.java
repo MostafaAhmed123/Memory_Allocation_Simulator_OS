@@ -1,6 +1,10 @@
 public class Process {
     private String processName;
     private int size;
+    public Process(String processName, int size) {
+        this.processName = processName;
+        this.size = size;
+    }
 
     public String getProcessName() {
         return processName;

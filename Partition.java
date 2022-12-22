@@ -3,10 +3,13 @@ public class Partition {
     private int size;
     private boolean isFree = true;
     private Process process;
+    public static int ID = 0;
+
     public Partition(String partitionName, int size, boolean isFree) {
         this.partitionName = partitionName;
         this.size = size;
         this.isFree = isFree;
+        ID++;
     }
 
     public Process getProcess() {
